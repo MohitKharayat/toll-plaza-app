@@ -2,23 +2,25 @@
 
 <form (ngSubmit)="addVehicle()">
 
-  <input
-    type="text"
-    placeholder="License Plate"
-    [(ngModel)]="licensePlate"
-    name="licensePlate"
-  >
+  <input type="text" placeholder="License Plate" [(ngModel)]="licensePlate" name="licensePlate">
 
-  <select
-    [(ngModel)]="vehicleType"
-    name="vehicleType"
-  >
+  <select [(ngModel)]="vehicleType" name="vehicleType">
 
     <option value="">Select Vehicle Type</option>
 
     <option value="Car">Car</option>
     <option value="Truck">Truck</option>
     <option value="Motorcycle">Motorcycle</option>
+
+  </select>
+  
+  <select [(ngModel)]="status" name="status">
+
+    <option value="">Select Status</option>
+
+    <option value="Paid">Paid</option>
+    <option value="Pending">Pending</option>
+    <option value="Violation">Violation</option>
 
   </select>
 

@@ -14,6 +14,7 @@ import { LogsService } from '../../services/logs.service';
 export class VehicleFormComponent {
   licensePlate: string = '';
   vehicleType: string = '';
+  status: string = '';
 
   constructor(private logsService: LogsService) {}
 
@@ -21,8 +22,9 @@ export class VehicleFormComponent {
     const newVehicle = {
       licensePlate: this.licensePlate,
       vehicleType: this.vehicleType,
+      status: this.status,
     };
-    if (!this.licensePlate || !this.vehicleType) {
+    if (!this.licensePlate || !this.vehicleType || !this.status) {
       alert('Please fill all fields');
       return;
     }
