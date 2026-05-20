@@ -1,0 +1,29 @@
+<h2>Add Vehicle Entry</h2>
+
+<form (ngSubmit)="addVehicle()">
+
+  <input
+    type="text"
+    placeholder="License Plate"
+    [(ngModel)]="licensePlate"
+    name="licensePlate"
+  >
+
+  <select
+    [(ngModel)]="vehicleType"
+    name="vehicleType"
+  >
+
+    <option value="">Select Vehicle Type</option>
+
+    <option value="Car">Car</option>
+    <option value="Truck">Truck</option>
+    <option value="Motorcycle">Motorcycle</option>
+
+  </select>
+
+  <button type="submit">
+    Add Entry
+  </button>
+
+</form>

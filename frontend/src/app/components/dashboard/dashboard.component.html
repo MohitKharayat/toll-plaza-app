@@ -1,0 +1,46 @@
+<h2>Vehicle Logs</h2>
+<div class="filter-section">
+
+<input
+  type="text"
+  placeholder="Search License Plate"
+  [(ngModel)]="searchText"
+>
+
+<select [(ngModel)]="selectedVehicleType">
+
+  <option value="">All Vehicles</option>
+  <option value="Car">Car</option>
+  <option value="Truck">Truck</option>
+  <option value="Motorcycle">Motorcycle</option>
+
+</select>
+
+</div>
+<table border="1" cellpadding="10">
+
+  <thead>
+    <tr>
+      <th>License Plate</th>
+      <th>Vehicle Type</th>
+      <th>Timestamp</th>
+      <th>Toll Fee</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr *ngFor="let log of filteredLogs()">
+
+      <td>{{ log.licensePlate }}</td>
+      <td>{{ log.vehicleType }}</td>
+      <td>{{ log.timestamp }}</td>
+      <td>{{ log.fee }}</td>
+      <td>{{ log.status }}</td>
+
+    </tr>
+
+  </tbody>
+
+</table>

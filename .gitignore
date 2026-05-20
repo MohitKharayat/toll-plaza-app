@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Angular
+frontend/.angular/
+frontend/dist/
+
+# NestJS
+backend/dist/
+
+# Logs
+npm-debug.log*
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Coverage
+coverage/
