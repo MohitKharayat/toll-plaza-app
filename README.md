@@ -7,9 +7,12 @@ A mini full-stack application built using Angular and NestJS for managing toll p
 - View vehicle logs
 - Add new vehicle entries
 - Automatic toll fee calculation
-- Filter by vehicle type
-- Search by license plate
-- Government vehicle fee exemption
+- Search vehicles by license plate
+- Filter vehicles by type
+- Manual toll status selection
+  - Paid
+  - Pending
+  - Violation
 - Responsive dashboard UI
 
 ---
@@ -99,7 +102,8 @@ Example Request:
 ```json
 {
   "licensePlate": "UK07AB1234",
-  "vehicleType": "Car"
+  "vehicleType": "Car",
+  "status": "Paid"
 }
 ```
 
