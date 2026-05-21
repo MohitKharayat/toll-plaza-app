@@ -108,6 +108,25 @@ Example Request:
 ```
 
 ---
+# Screenshots
+
+## Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## Vehicle Entry Form
+
+![Form](screenshots/form.png)
+
+---
+
+## Filtering Feature
+
+![Filter](screenshots/filter.png)
+
+---
 
 # Author
 
